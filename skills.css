@@ -252,6 +252,9 @@ footer{
     .show-project{
         grid-template-columns: auto;
     }
+    .project1{
+        margin-bottom: 15px;
+    }
 }
 .project1{
     border: 1px solid white;
@@ -341,7 +344,7 @@ footer a .facebook{
     }
     .card{
         
-        margin-top: 10px;
+        margin-top: 30px;
     }
 }
 
