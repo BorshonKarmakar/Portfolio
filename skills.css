@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Global fix */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #777bb3;
+}
+
+/* Image responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+header{
+    box-sizing: border-box;
+    box-shadow: 0px 8px 0px white;
+}
+.header .navbar{
+    background-color: rgb(56, 39, 83);
+    color: white;
+    text-align: center;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.header ul li a{
+    color: white;
+}
+.header ul li a:hover{
+    color: orange;
+    transition: 1s;
+}
+.navbar-nav li:hover{
+    border-bottom:2px solid orange;
+    transition: 1s;
+}
+
+/* card part */
+.skills-card{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    
+    
+}
+.skills-card .card{
+    height: 400px;
+    width: 250px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 0px white;
+    background-color: #c9cdd6;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.card:hover{
+    transition: .8s;
+    box-sizing: border-box;
+    box-shadow: 10px 8px 12px black;
+}
+.fa-html5{
+    color: #f16529;
+}
+.fa-css3{
+    color: #2965f1;
+}
+.fa-bootstrap{
+    color: #7b11f9;
+}
+.fa-php{
+    color: #777bb3;
+}
+.fa-laravel{
+    color: #ff2617;
+}
+.icon i{
+    font-size: 120px;
+    
+}
+
+/* footer section */
+footer{
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   
+}
+.link-part{
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* Progress bar */
+.my-skill{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-color: burlywood;
+    width: 50%;
+    border-radius: 10px 30px;
+}
+
+.my-skill ul li{
+    list-style: none;
+    font-size: 20px;
+    margin-top: 20px;
+    position: relative;
+    
+}
+.my-skill ul li::before{
+    content: "";
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-radius: 5px;
+    background-color: rgba(242, 242, 250, 0.5);
+    
+}
+.html::after{
+    content: "";
+    width: 0%;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-radius: 5px;
+    background-color: rgb(218, 40, 218);
+    animation: html 3s infinite;
+    
+}
+@keyframes html {
+    100%{
+        width: 100%;
+    }    
+}
+.css::after{
+    content: "";
+    width: 0%;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-radius: 5px;
+    background-color: rgb(218, 40, 218);
+    animation: css 3s infinite;
+    animation-delay: .5s;
+    
+}
+@keyframes css {
+    100%{
+        width: 90%;
+    }    
+}
+.bootstrap::after{
+    content: "";
+    width: 0%;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-radius: 5px;
+    background-color: rgb(218, 40, 218);
+    animation: bootstrap 3s infinite;
+    animation-delay: .8s;
+    
+}
+@keyframes bootstrap {
+    100%{
+        width: 95%;
+    }    
+}
+.js::after{
+    content: "";
+    width: 0%;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-radius: 5px;
+    background-color: rgb(218, 40, 218);
+    animation: js 3s infinite;
+    animation-delay: 1s;
+    
+}
+@keyframes js {
+    100%{
+        width: 80%;
+    }    
+}
+.php::after{
+    content: "";
+    width: 0%;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-radius: 5px;
+    background-color: rgb(218, 40, 218);
+    animation: php 3s infinite;
+    animation-delay: 1.3s;
+    
+}
+.laravel::after{
+    content: "";
+    width: 0%;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-radius: 5px;
+    background-color: rgb(218, 40, 218);
+    animation: php 3s infinite;
+    animation-delay: .5s;
+    
+}
+@keyframes php {
+    100%{
+        width: 100%;
+    }    
+}
+
+@media screen and (max-width: 600px){
+    .my-skill .headt{
+        font-size: 25px;
+    }
+    .my-skill{
+        width: 80%;
+    }
+    .my-skill ul li{
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 768px){
+    .facebook{
+        font-size: 30px !important;
+    }
+}
+
+/* project */
+.show-project{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #7b11f9;
+    color: white;
+}
+@media screen and (max-width: 900px){
+    .show-project{
+        grid-template-columns: auto;
+    }
+}
+.project1{
+    border: 1px solid white;
+    height: 630px;
+    position: relative;
+}
+.project1 iframe{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.project2{
+    border: 1px solid white;
+    height: 630px;
+    position: relative;
+}
+.project2 iframe{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.project .project1 caption{
+    font-size: 25px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin: auto;
+}
+footer a .instagram{
+    color: orange;
+    border-radius: 5px;
+}
+footer a .instagram:hover{
+    color: rgb(216, 118, 132);
+    transition: .8s;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px  white;
+    border: 2px solid white;
+}
+footer a .facebook:hover{
+    color: rgb(34, 5, 254);
+    transition: .8s;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px  white;
+    border: 2px solid white;
+}
+footer a .linked:hover{
+    color: rgb(35, 24, 116);
+    transition: .8s;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px  white;
+    border: 2px solid white;
+}
+footer a .call{
+    color: orange;
+}
+footer a .facebook{
+    color: orange;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 768px){
+    .link-part{
+        display: block !important;
+    }
+    .link-part a{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .skills-card {
+        grid-template-columns: auto auto;
+        
+        
+    }
+    .card{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .skills-card {
+        grid-template-columns:auto;
+        
+        
+    }
+    .card{
+        
+        margin-top: 10px;
+    }
+}
+

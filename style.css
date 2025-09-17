@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Global fix */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Image responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.text-part{
+    color: white;
+    background-color: rgb(28, 35, 67);
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin-bottom: 3px;
+}
+.header{
+    box-sizing: border-box;
+    box-shadow: 0px 8px 0px white;
+}
+.header .navbar{
+    background-color: rgb(56, 39, 83);
+    color: white;
+    text-align: center;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.header ul li a{
+    color: white;
+}
+.header ul li a:hover{
+    color: orange;
+    transition: 1s;
+}
+.navbar-nav li:hover{
+    border-bottom:2px solid orange;
+    transition: 1s;
+}
+
+.text-part .text{
+    margin-top: 20px;
+}
+.text-part p{
+    font-size: 25px;
+}
+.text-part .text span{
+    color: orange;
+}
+
+.text-part{
+    display: grid;
+    grid-template-columns: auto auto;
+    font-family: 'poppins', sans-serif;
+}
+.about{
+    box-sizing: border-box;
+    box-shadow: 0px 8px 0px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-dec1{
+    width: auto;
+}
+.image-part{
+    position: relative;
+    
+}
+.text-part .image-part img{
+    margin-top: 50px;
+    height: 300px;
+    width: auto;
+    border-radius: 50%;
+    border-left: 8px solid orange;
+    border-bottom: 8px solid orange;
+    animation: borde 2s infinite;
+    
+    
+}
+.image-part img::after{
+    content: "";
+    
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    animation: picture 1s 1;
+}
+
+@keyframes borde {
+    0%{
+        border-left: 8px solid orange;
+    border-bottom: 8px solid orange;
+    }
+    50%{
+          border-left: 8px solid rgb(255, 77, 0);
+    border-bottom: 8px solid rgb(255, 77, 0);  
+    }
+    100%{
+        border-left: 8px solid orange;
+    border-bottom: 8px solid orange;
+    }
+    
+}
+
+.borshon{
+    position: relative;
+    font-family: 'poppins', sans-serif;
+}
+.borshon::after{
+    content: "";
+    border-left: 2px solid orange;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(28, 35, 67);
+    animation: typing 2s steps(15) infinite;
+
+}
+.full{
+    position: relative;
+}
+.full::after{
+    content: "";
+    border-left: 2px solid orange;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(28, 35, 67);
+    animation: typing 2s steps(15) infinite;
+
+}
+
+@keyframes typing {
+    100%{
+        left: 120%;
+    }
+    
+}
+.form-part{
+    background-color: rgb(28, 35, 67);
+}
+.send-buttton{
+    padding: 8px 15px;
+    background-color: orange;
+    color: white;
+    border-radius: 5px 20px;
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+    
+}
+.send-buttton:hover{
+    box-shadow: 2px 2px 2px white;
+}
+
+footer{
+   position: relative;
+   bottom: 0;
+   width: 100%;
+   
+}
+.link-part{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 768px){
+    .link-part{
+        display: block !important;
+    }
+    .link-part a{
+        font-size: 20px;
+    }
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: auto;
+}
+footer a .instagram{
+    color: orange;
+    border-radius: 5px;
+}
+footer a .call{
+    color: orange;
+}
+footer a .facebook{
+    color: orange;
+    font-size: 30px;
+}
+footer a .instagram:hover{
+    color: rgb(216, 118, 132);
+    transition: .8s;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px  white;
+    border: 2px solid white;
+}
+footer a .facebook:hover{
+    color: rgb(34, 5, 254);
+    transition: .8s;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px  white;
+    border: 2px solid white;
+}
+footer a .linked:hover{
+    color: rgb(35, 24, 116);
+    transition: .8s;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px  white;
+    border: 2px solid white;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .nav-brand{
+        font-size: 15px !important;
+    }
+    .name{
+        font-size: 20px !important;
+    }
+  .about-dec1{
+    font-size: 15px !important;
+    width: 90% !important;
+    text-align: center;
+    
+  } 
+  .about-dec{
+    font-size: 15px !important;
+    width: 90%;
+    text-align: center;
+    
+    
+  } 
+  .text-part{
+    display: flex;
+    flex-direction: column !important;
+    width: 100%;
+  }
+  .image-part{
+    display: flex;
+    justify-content: center;
+  }
+  .developer{
+    font-size: 20px !important;
+  }
+  .form-part{
+    display: flex;
+    flex-direction: column;
+  }
+  .input{
+    margin-top: 20px;
+  }
+  
+}
